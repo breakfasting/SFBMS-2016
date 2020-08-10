@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFBMS, EAJS, CSSBMR 2016 - Programme</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){   
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},800);                   
+            }            
+        });    
+    });
+    $(".hidetable").toggle();	
+	$("#toggleshow").click(function()
+	{
+		$(".hidetable").fadeToggle(300);
+		  if ($(this).text() == "Show More") 
+		  { 
+			 $(this).text("Show Less"); 
+		  } 
+		  else 
+		  { 
+			 $(this).text("Show More"); 
+		  }; 
+    });
+    
+});
+</script>
+</head>
+
+<body>
+<a name="top"></a>
+<!--<div id="finder">
+	<div class="container960">
+		<p>Home > About</p>
+	</div>
+</div>-->
+<header>
+    <div class="container960">
+
+        <div id="cf4a">
+          <img src="images/banner_EAJS.png" />
+          <img src="images/banner_CSSBMR.png" />
+          <img src="images/banner_SFBMS.png" />
+          <img src="images/banner_EAJS.png" />
+        </div>
+        <div id="date">
+        <img class="date" src="images/date.png">
+        </div>
+    </div>
+
+</header>
+<div class="navbar">
+<ul id="nav">
+  <li id="nav"><a href="index.html">Home</a>
+  	  <!--<a class="chinese" href="#home">首頁</a>-->
+  </li>
+  <li id="nav"><a href="speakers.html">Speakers</a></li>
+  <li id="nav"><a class="active" href="programme.html">Programme</a></li>
+  <li id="nav"><a href="registration.html">Registration</a></li>
+  <li id="nav"><a href="location.html">Location</a></li>
+  <li id="nav"><a href="manual.html">Manual</a></li>
+</ul>
+</div>
+<div class="programmebox">
+    <div class="container960">
+    <section id="programmegreytext">
+        <p id="floatright">Programme last updated on 2016/10/16</p>
+    </section>
+    </div>
+
+<div class="container960" id="whitebg">
+<img class="shadow" src="images/programmebanner1.jpg" width="960" height="180" alt="Programme Day one banner">
+<section id="centerinfo">
+    <table width="800" border="0" cellpadding="0" cellspacing="0" id="outline">
+    <tr id="tf">
+      <td width="175">
+        <p id="tabledate">10/18</p></td>
+      <td width="155"><p align="center">Speaker</p></td>
+      <td width="270"><p align="center">Topic</p></td>
+      <td width="200"><p align="center">Moderator</p></td>
+    </tr>
+    <tr>
+      <th width="175">08:10~08:30</th>
+      <td colspan="3"><p align="center"><strong>Registration</strong></p></td>
+    </tr>
+    <tr>
+      <th width="175">08:30~09:00</th>
+      <td colspan="3"><p align="center"><strong>Welcome address and photo session</strong><br>Kuo-En Chang (President, Taiwan Normal University)</p></td>
+    </tr>
+    <tr id="ts1">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session I : Cell Biology (I)</strong></p></td>
+      <td width="200" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Xiaolong Liu & Yoshinori Akiyama</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175"><p align="center"><strong>S1</strong></p>
+09:00~09:15</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Xiaolong Liu</p></td>
+      <td colspan="2"><p>Uhrf1 controls iNKT cell survival and differentiation through the Akt-mTOR axis</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175"><p align="center"><strong>S2</strong></p>
+09:15~10:30</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Youngjo Kim</p></td>
+      <td colspan="2"><p>The role of lamins in 3D genome organization and development</p></td>
+    </tr>
+	<tr id="ts1">
+      <th width="175"><p align="center"><strong>S3</strong></p>
+09:30~09:45</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Yoshinori Akiyama</p></td>
+      <td colspan="2"><p>Regulation of <i>E. coli</i> heat shock response regulator s<sup>32</sup> via SRP protein targeting pathway</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175"><p align="center"><strong>S4</strong></p>
+09:45~10:00</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Man Ryul Lee</p></td>
+      <td colspan="2"><p>Derivation of Endothelial Colony Forming Cells from Induced Pluripotent Cells to Engineer Human Blood Vessles</p></td>
+    </tr>
+<tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P1</strong></p>
+10:00~10:05</th>
+      <td width="155" class="student"><p id="navslink">Institute of Medical Science, University of Tokyo</p><p>Miyu Moriyama</p></td>
+      <td colspan="2" class="student"><p>Regulation of inflammasomes by the nonstructural proteins of RNA viruses</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P2</strong></p>
+10:05~10:10</th>
+      <td width="155" class="student"><p id="navslink">Institute of Molecular Biology and Genetics, Seoul National University</p><p>Jinsung Yang</p></td>
+      <td colspan="2" class="student"><p>Inhibition of TRAP1 protects cells from oxidative stress</p></td>
+    </tr>
+	<tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P3</strong></p>
+10:10~10:15</th>
+      <td width="155" class="student"><p id="navslink">Institute for Virus Research, Kyoto University</p><p>Shohei Kojima</p></td>
+      <td colspan="2" class="student"><p>A lncRNA derived from an endogenous bornavirus element in human genome suppresses BDV infection</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P4</strong></p>
+10:15~10:20</th>
+      <td width="155" class="student"><p id="navslink">Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences</p><p>Yuheng Shi</p></td>
+      <td colspan="2" class="student"><p>An autoinhibitory mechanism modulates MAVS activity in antiviral innate immune response</p></td>
+    </tr>
+    <tr>
+      <th width="175">10:20~10:40</th>
+      <td colspan="3"><p align="center">Coffee Break</p></td>
+    </tr>
+   	<tr id="sessionspace"><td></td></tr>
+	<tr id="ts2">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session II : Cell Biology (II) &<br> Cancer Biology (I)</strong></p></td>
+      <td width="200" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Jingyi Hui &<br> Sujung Song</p></td>
+	</tr>
+	<tr id="ts2">
+      <th width="175"><p align="center"><strong>S5</strong></p>
+10:40~10:55</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Jingyi Hui</p></td>
+      <td colspan="2"><p>Understanding the crosstalk between alternative splicing and signal transduction</p></td>
+    </tr>
+    <tr id="ts2">
+      <th width="175"><p align="center"><strong>S6</strong></p>
+10:55~11:10</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Helene Liu</p></td>
+      <td colspan="2"><p>The Control of Type I Interferon Induction by Serine Protease</p></td>
+    </tr>
+    <tr id="ts2">
+      <th width="175"><p align="center"><strong>S7</strong></p>
+11:10~11:25</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Tokiko Nagamura-Inoue</p></td>
+      <td colspan="2"><p>Umbilical cord is a rich source of mesenchymal stromal cells for cell therapy</p></td>
+    </tr>
+    <tr id="ts2">
+      <th width="175"><p align="center"><strong>S8</strong></p>
+11:25~11:40</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Sujung Song</p></td>
+      <td colspan="2"><p>Genetic and Epigenetic Cues Controlling Cancer Hallmarks</p></td>
+    </tr>
+<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P5</strong></p>
+11:40~11:45</th>
+      <td width="155" class="student"><p id="navslink">Soonchunhyang Institute of Medi-bio Science, Soonchunhyang University</p>        
+        <p>Duckgue Lee</p></td>
+      <td colspan="2" class="student"><p>ER stress regulate cell cycle through eIF2&alpha; phosphorylation</p></td>
+    </tr>
+<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P6</strong></p>
+11:45~11:50</th>
+      <td width="155" class="student"><p id="navslink">Institute of Molecular Biology and Genetics, Seoul National University</p><p>Kyungsoo Park</p></td>
+      <td colspan="2" class="student"><p>X protein confers resistance to inhibitory cytokines and stability on iT<sub>reg</sub> differentiation</p></td>
+    </tr>
+<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P7</strong></p>
+11:50~11:55</th>
+      <td width="155" class="student"><p id="navslink">Department of Life Science, Taiwan Normal University</p><p>Chang-Heng Hsieh</p></td>
+      <td colspan="2" class="student"><p>A newly identified triazole derivative promotes autophagic apoptosis in human non-small-cell-lung-cancer tumors</p></td>
+    </tr>
+<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P8</strong></p>
+11:55~12:00</th>
+      <td width="155" class="student"><p id="navslink">Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences</p><p>Juanjuan Long</p></td>
+      <td colspan="2" class="student"><p>Molecular mechanism for telomeres’ functions in spermatogenesis</p></td>
+    </tr>
+    <tr>
+      <th width="175">12:00~14:00</th>
+      <td colspan="3"><p align="center">Lunch (Poster Review)</p></td>
+    </tr>
+    <tr>
+      <th width="175">12:45~13:45</th>
+      <td colspan="3"><p align="center">Director Meeting</p></td>
+    </tr> 
+   	<tr id="sessionspace"><td></td></tr>
+	<tr id="ts6">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session III : Cancer Biology (II)</strong></p></td>
+       <td width="200" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Chenqi Xu &<br> Ming-Shyue Lee</p></td>
+    </tr> 
+    <tr id="ts6">
+      <th width="175"><p align="center"><strong>S9</strong></p>
+14:00-14:15</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Chenqi Xu</p></td>
+      <td colspan="2"><p>Modulating T-cell cholesterol metabolism to treat cancer</p></td>
+    </tr>
+
+    <tr id="ts6">
+      <th width="175"><p align="center"><strong>S10</strong></p>
+14:15-14:30</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Hongbin Ji</p></td>
+      <td colspan="2"><p>Evidences and mechanism for the transdifferentiation of lung adenocarcinoma to squamous cell carcinoma</p></td>
+    </tr>
+    <tr id="ts6">
+      <th width="175"><p align="center"><strong>S11</strong></p>
+14:30~14:45</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Ming-Shyue Lee</p></td>
+      <td colspan="2"><p>TMPRSS2 is involved in androgen-induced prostate cancer cell invasion and metastasis</p></td>
+    </tr>
+    <tr id="ts6">
+      <th width="175"><p align="center"><strong>S12</strong></p>
+14:45~15:00</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Seongho Ryu</p></td>
+      <td colspan="2"><p>The role of MUC15 in thyroid cancer</p></td>
+    </tr>
+    
+	<tr id="ts6">
+      <th width="175" class="student"><p align="center"><strong>P9</strong></p>
+15:00~15:05</th>
+      <td width="155" class="student"><p id="navslink">Graduate Institute of Biochemistry and Molecular Biology, Taiwan University</p><p>Shang-ru Wu</p></td>
+      <td colspan="2" class="student"><p>The Kunitz domain I of hepatocyte growth Factor activator inhibitor-2 inhibited matriptase activity and invasive ability of prostate cancer cells</p></td>
+    </tr>
+    <tr id="ts6">
+      <th width="175" class="student"><p align="center"><strong>P10</strong></p>
+15:05~15:10</th>
+      <td width="155" class="student"><p id="navslink">Okinawa Institute of Science and Technology Graduate University</p><p>Olga Elisseeva</p></td>
+      <td colspan="2" class="student"><p>Hedgehog signaling at immune synapse</p></td>
+    </tr>
+	<tr id="ts6">
+      <th width="175" class="student"><p align="center"><strong>P11</strong></p>
+15:10~15:15</th>
+      <td width="155" class="student"><p id="navslink">Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences</p><p>Hsin-Yi Huang</p></td>
+      <td colspan="2" class="student"><p>In vivo CRISPR screening of oncogenic drivers in lung cancer</p></td>
+    </tr>
+	<tr id="ts6">
+      <th width="175" class="student"><p align="center"><strong>P12</strong></p>
+15:15~15:20</th>
+      <td width="155" class="student"><p id="navslink">Institute for Virus Research, Kyoto University</p><p>Yuya Yoshioka</p></td>
+      <td colspan="2" class="student"><p>A key role for neutrophils and the S100A9 protein in the development of tuberculosis granulomas</p></td>
+    </tr>
+    
+    <tr>
+      <th width="175">15:20~15:40</th>
+      <td colspan="3"><p align="center">Coffee Break</p></td>
+    </tr>    
+    <tr id="sessionspace"><td></td></tr>
+	<tr id="ts3">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session IV : Cell Biology (III) &<br> Cancer Biology (III)</strong></p></td>
+       <td width="200" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Mitsuhiro Yanagida & <br>Gaoxiang Ge</p></td>
+    </tr>
+    <tr id="ts3">
+      <th width="175"><p align="center"><strong>S13</strong></p>
+15:40-15:55</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Mitsuhiro Yanagida</p></td>
+      <td colspan="2"><p>Blood metabolomics for human health and longevity: toward understanding roles of age-related metabolites</p></td>
+    </tr>
+    <tr id="ts3">
+      <th width="175"><p align="center"><strong>S14</strong></p>
+15:55~16:10</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Gaoxiang Ge</p></td>
+      <td colspan="2"><p>Extracellular matrix remodeling in lung fibrosis and cancer</p></td>
+    </tr>
+    <tr id="ts3">
+      <th width="175"><p align="center"><strong>S15</strong></p>
+16:10~16:25</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Kang Fang</p></td>
+      <td colspan="2"><p>A triepoxide derivative promotes intrinsic and extrinsic pathway apoptosis in human cancer cells</p></td>
+    </tr>
+    
+	<tr id="ts3">
+      <th width="175" class="student"><p align="center"><strong>P13</strong></p>
+16:25~16:30</th>
+      <td width="155" class="student"><p id="navslink">Institute of Medical Science, University of Tokyo</p><p>Sadanori Miyoshi</p></td>
+      <td colspan="2" class="student"><p>DOK7 gene therapy for a mouse model of neuromuscular disorder</p></td>
+    </tr>
+	<tr id="ts3">
+      <th width="175" class="student"><p align="center"><strong>P14</strong></p>
+16:30~16:35</th>
+      <td width="155" class="student"><p id="navslink">Institute of Molecular Biology and Genetics, Seoul National University</p><p>Sangjin Paik</p></td>
+      <td colspan="2" class="student"><p>Potential anti-cancer therapy targeting molecular basis of BRCA2-BubR1 complex</p></td>
+    </tr>
+	<tr id="ts3">
+      <th width="175" class="student"><p align="center"><strong>P15</strong></p>
+16:35~16:40</th>
+      <td width="155" class="student"><p id="navslink">Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences</p><p>Weiyun Li</p></td>
+      <td colspan="2" class="student"><p>STK4 regulates TLR pathway and protects against chronic inflammation-related hepatocellular carcinoma</p></td>
+    </tr>
+    
+    <tr id="sessionspace"><td></td></tr>
+	<tr id="ts4">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session V : Virology</strong></p></td>
+       <td width="200" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Yoshio Koyanagi &<br> Kwangseog Ahn</p></td>
+    </tr>
+    <tr id="ts4">
+      <th width="175"><p align="center"><strong>S16</strong></p>
+16:40~16:55</th>
+      <td width="155"><p id="navslink">Doctor</p>Yoshio Koyanagi</td>
+      <td colspan="2"><p>HIV-1 evolution : Gain-of-function evolution of SIVcpz</p></td>
+    </tr>
+    <tr id="ts4">
+      <th width="175"><p align="center"><strong>S17</strong></p>
+16:55~17:10</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Takeshi Ichinohe</p></td>
+      <td colspan="2"><p>Activation of the NLRP3 inflammasome by RNA viruses</p></td>
+    </tr>
+    <tr id="ts4">
+      <th width="175"><p align="center"><strong>S18</strong></p>
+17:10~17:25</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Kwangseog Ahn</p></td>
+      <td colspan="2"><p>Role of viral noncoding RNAs in host-virus interactions</p></td>
+    </tr>
+    
+	<tr id="ts4">
+      <th width="175" class="student"><p align="center"><strong>P16</strong></p>
+17:25~17:30</th>
+      <td width="155" class="student"><p id="navslink">Institute for Virus Research, Kyoto University</p><p>Mohamed Mahgoub</p></td>
+      <td colspan="2" class="student"><p>Transient expression of human T-cell leukemia virus type 1 Tax is essential for proliferation of leukemic cells</p></td>
+    </tr>
+	<tr id="ts4">
+      <th width="175" class="student"><p align="center"><strong>P17</strong></p>
+17:30~17:35</th>
+      <td width="155" class="student"><p id="navslink">Soonchunhyang Institute of Medi-bio Science, Soonchunhyang University</p><p>Jay Prakash Sah</p></td>
+      <td colspan="2" class="student"><p>Investigating the role of Autotaxin in skeletal muscle stem cells</p></td>
+    </tr>
+	<tr id="ts4">
+      <th width="175" class="student"><p align="center"><strong>P18</strong></p>
+17:35~17:40</th>
+      <td width="155" class="student"><p id="navslink">Department of Life Science, Taiwan Normal University</p><p>Ding-Siang Huang</p></td>
+      <td colspan="2" class="student"><p>Protective effects of wogonin against Alzheimer’s disease by inhibition of amyloidgenic pathway</p></td>
+    </tr>
+	<tr id="ts4">
+      <th width="175" class="student"><p align="center"><strong>P19</strong></p>
+17:40~17:45</th>
+      <td width="155" class="student"><p id="navslink">Okinawa Institute of Science and Technology Graduate University</p><p>Dina Mostafa</p></td>
+      <td colspan="2" class="student"><p>The role of the enzymatic subunits of the CCR4-NOT complex in mRNA deadenylation and cell viability</p></td>
+    </tr>
+    
+    <tr>
+      <th width="175"><p align="center">18:00-21:00</p></th>
+      <td colspan="3"><p align="center">Dinner (poster review)</p></td>
+    </tr>
+  </table>
+</section>	
+</div>
+
+<div class="container960">
+    <section id="programmegreytext" class="newslink">
+        <a id="floatright" href="#top">Back to top ▲</a>
+    </section>
+</div>
+
+<div class="container960" id="whitebg">
+<img class="shadow" src="images/programmebanner2.jpg" width="960" height="180" alt="Programme Day 2 banner">
+<section id="centerinfo">
+<table width="800" border="0" cellpadding="0" cellspacing="0" id="outline" >
+    <tr id="tf">
+      <td width="175"><p id="tabledate">10/19</p></td>
+      <td width="156"><p align="center">Speaker</p></td>
+      <td width="272"><p align="center">Title</p></td>
+      <td width="197"><p align="center">Moderator</p></td>
+    </tr>
+    <tr id="ts5">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session VI : Immunology</strong></p></td>
+       <td width="200" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Susumu Nakae &<br> Takashi Mino</p></td>
+    </tr>
+    <tr id="ts5">
+      <th width="175"><p align="center"><strong>S19</strong><strong> </strong></p>
+09:00~09:15</th>
+      <td width="155"><p id="navslink">Doctor</p>Susumu Nakae</td>
+      <td colspan="2"><p>IL-33-mediated allergic inflammation</p></td>
+    </tr>
+    <tr id="ts5">
+      <th width="175"><p align="center"><strong>S20</strong><strong> </strong></p>
+09:15~10:30</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Daisuke Morita</p></td>
+      <td colspan="2"><p>Discovery of N-myristoylated lipopeptide Ag-presenting MHC class I molecules</p></td>
+    </tr>
+    <tr id="ts5">
+      <th width="175"><p align="center"><strong>S21</strong><strong> </strong></p>
+09:30~09:45</th>
+      <td width="155"><p id="navslink">Doctor</p><p>Takashi Mino</p></td>
+      <td colspan="2"><p>Regnase-1 and Roquin regulate a common element in inflammatory mRNAs by spatiotemporally distinct mechanisms</p></td>
+    </tr>
+    
+	<tr id="ts5">
+      <th width="175" class="student"><p align="center"><strong>P20</strong><strong> </strong></p>
+09:45~09:50</th>
+      <td width="155" class="student"><p id="navslink">Institute of Medical Science, University of Tokyo</p><p>Jong-Hun Lee</p></td>
+      <td colspan="2" class="student"><p>Distribution of methylated non-CpGs in neuron and pluripotent stem cells</p></td>
+    </tr>
+	<tr id="ts5">
+      <th width="175" class="student"><p align="center"><strong>P21</strong><strong> </strong></p>
+09:50~09:55</th>
+      <td width="155" class="student"><p id="navslink">Institute of Molecular Biology and Genetics, Seoul National University</p><p>Chuna Kim</p></td>
+      <td colspan="2" class="student"><p>Telomere maintenance through recruitment of internal genomic regions</p></td>
+    </tr>
+	<tr id="ts5">
+      <th width="175" class="student"><p align="center"><strong>P22</strong><strong> </strong></p>
+09:55~10:00</th>
+      <td width="155" class="student"><p id="navslink">Soonchunhyang Institute of Medi-bio Science, Soonchunhyang University</p><p>Ita Novita Sari</p></td>
+      <td colspan="2" class="student"><p>IFITM is required for the propagation for colorectal cancer</p></td>
+    </tr>
+	<tr id="ts5">
+      <th width="175" class="student"><p align="center"><strong>P23</strong><strong> </strong></p>
+10:00~10:05</th>
+      <td width="155" class="student"><p id="navslink">Genomic Research Center, Academia Sinica</p><p>Tsung-Wei Su</p></td>
+      <td colspan="2" class="student"><p>Structural studies on a Death Domain-fold protein</p></td>
+    </tr>
+	<tr id="ts5">
+      <th width="175" class="student"><p align="center"><strong>P24</strong><strong> </strong></p>
+10:05~10:10</th>
+      <td width="155" class="student"><p id="navslink">Okinawa Institute of Science and Technology Graduate University</p><p>Ken-ichi Sajiki</p></td>
+      <td colspan="2" class="student"><p>Essential Genes for Healthy Quiescence: yeast study to understand cellular longevity</p></td>
+    </tr>
+    
+    <tr>
+      <th width="175">10:10~10:30</th>
+      <td colspan="3"><p align="center">Coffee Break</p></td>
+    </tr>   
+    <tr id="sessionspace"><td></td></tr>
+    <tr id="ts7">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session VII : Development Biology &<br> Bioinformatics</strong></p></td>
+      <td width="197" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Mofang Liu & <br>Kenta Nakai</p></td>
+    </tr>
+    <tr id="ts7">
+      <th width="175"><p align="center"><strong>S22</strong><strong> </strong></p>
+10:30~10:45</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Ichiro Masai</p></td>
+      <td colspan="2">Spatial regulation of lens fiber differentiation</td>
+    </tr>
+    <tr id="ts7">
+      <th width="175"><p align="center"><strong>S23</strong><strong> </strong></p>
+10:45~11:00</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Mofang Liu</p></td>
+      <td colspan="2">The new function of piRNA/PIWI in mouse spermiogenesis</td>
+    </tr>
+    <tr id="ts7">
+      <th width="175"><p align="center"><strong>S24</strong><strong> </strong></p>
+11:00~11:15</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Young-Yun Kong</p></td>
+      <td colspan="2">Establishment of a reserve pool of adult quiescent muscle stem cells at puberty</td>
+    </tr>
+    <tr id="ts7">
+      <th width="175"><p align="center"><strong>S25</strong><strong> </strong></p>
+11:15~11:30</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Kenta Nakai</p></td>
+      <td colspan="2"><p>How can bioinformaticians contribute to regenerative medicine?</p></td>
+    </tr>
+    <tr id="ts7">
+      <th width="175"><p align="center"><strong>S26</strong><strong> </strong></p>
+11:30~11:45</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Jongsik Chun</p></td>
+      <td colspan="2"><p>Microbial diversity revealed by large scale comparative genomics</p></td>
+    </tr>
+    
+	<tr id="ts7">
+      <th width="175" class="student"><p align="center"><strong>P25</strong><strong> </strong></p>
+11:45~11:50</th>
+      <td width="155" class="student"><p id="navslink">Okinawa Institute of Science and Technology Graduate University</p><p>Tsai-Ming Lu</p></td>
+      <td colspan="2" class="student"><p>Phylogenomic study of <i>Dicyema japonicum</i> reveals the evolutionary position of dicyemid mesozoan and the two-directional evolution of spiralians</p></td>
+    </tr>
+	<tr id="ts7">
+      <th width="175" class="student"><p align="center"><strong>P26</strong><strong> </strong></p>
+11:50~11:55</th>
+      <td width="155" class="student"><p id="navslink">Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences</p><p>Cuiqing Zhong</p></td>
+      <td colspan="2" class="student"><p>Structural studies on a Death Domain-fold protein</p></td>
+    </tr>
+    
+    <tr>
+      <th width="175"><p align="center">11:55~14:00</p></th>
+      <td colspan="3"><p align="center">Lunch (poster review)</p></td>
+    </tr>
+    <tr id="sessionspace"><td></td></tr>
+    <tr id="ts8">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session VIII : Neuroscience (I)</strong></p></td>
+      <td width="197" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Yuji Yamanashi &<br> Lan Bao</p></td>
+    </tr>
+    <tr id="ts8">
+      <th width="175"><p align="center"><strong>S27</strong><strong> </strong></p>
+14:00-14:15</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Yuji Yamanashi</p></td>
+      <td colspan="2"><p>Signaling in neuromuscular junction formation and a possible therapeutic approach</p></td>
+    </tr>
+    <tr id="ts8">
+      <th width="175"><p align="center"><strong>S28</strong><strong> </strong></p>
+14:15-14:30</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Itaru Imayoshi</p></td>
+      <td colspan="2"><p>Impairment of the hippocampal postnatal neurogenesis and its involvement in the neurodevelopmental disorder</p></td>
+    </tr>
+    <tr id="ts8">
+      <th width="175"><p align="center"><strong>S29</strong><strong> </strong></p>
+14:30~14:45</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Lan Bao</p></td>
+      <td colspan="2"><p>FMRP-mediated axonal delivery of miR-181d regulates axon elongation via locally targeting Map1b and Calm1</p></td>
+    </tr>
+    <tr id="ts8">
+      <th width="175"><p align="center"><strong>S30</strong><strong> </strong></p>
+14:45~15:00</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Hongyan Wang</p></td>
+      <td colspan="2"><p>New effectors in the regulation of T cell migration and multiple sclerosis</p></td>
+    </tr>
+    
+	<tr id="ts8">
+      <th width="175" class="student"><p align="center"><strong>P27</strong><strong> </strong></p>
+15:00~15:05</th>
+      <td width="155" class="student"><p id="navslink">Okinawa Institute of Science and Technology Graduate University</p><p>Yung-Yu Chen</p></td>
+      <td colspan="2" class="student"><p>Impact of dietary broccoli on non-alcoholic fatty liver disease and liver cancer in mice fed a Western diet</p></td>
+    </tr>
+ 	<tr id="ts8">
+      <th width="175" class="student"><p align="center"><strong>P28</strong><strong> </strong></p>
+15:05~15:10</th>
+      <td width="155" class="student"><p id="navslink">Department of Life Science, Taiwan Normal University</p><p>Chia Wei Lin</p></td>
+      <td colspan="2" class="student"><p>The molecular pathogenesis studies for SCA17 through transgenic mouse model</p></td>
+    </tr>   
+    
+    <tr id="sessionspace"><td></td></tr>
+    <tr id="ts1">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session IX : Neuroscience (II)</strong></p></td>
+      <td width="197" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Yun-Ru Chen &<br> Hsiu-Mei Hsieh</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175"><p align="center"><strong>S31</strong><strong> </strong></p>
+15:10-15:25</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Yun-Ru Chen</p></td>
+      <td colspan="2"><p>Full-length TDP-43 forms toxic amyloid oligomers in frontotemporal lobar dementia-TDP patients and disturbs amyloid-β fibrillization</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175"><p align="center"><strong>S32</strong><strong> </strong></p>
+15:25~15:40</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Guey-Jen Lee-Chen</p></td>
+      <td colspan="2"><p>The potential of indole/indolylquinoline compounds for Aβ/tau aggregation reduction by chemical chaperone activity and enhancement of HSPB1</p></td>
+    </tr>
+    <tr id="ts1">
+      <th width="175"><p align="center"><strong>S33</strong><strong> </strong></p>
+15:40~15:55</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Hsiu-Mei Hsieh</p></td>
+      <td colspan="2"><p>A newly identified GSK-3β kinase inhibitor AM404 ameliorates the pathological characterizations of Alzheimer’s disease</p></td>
+    </tr>
+    
+ 	<tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P29</strong><strong> </strong></p>
+15:55~16:00</th>
+      <td width="155" class="student"><p id="navslink">Soonchunhyang Institute of Medi-bio Science, Soonchunhyang University</p><p>Princess Wendy Andaya Bayona</p></td>
+      <td colspan="2" class="student"><p>Adipose tissue dendritic cells are independent contributors to obesity-induced inflammation and insulin resistance</p></td>
+    </tr>   
+ 	<tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P30</strong><strong> </strong></p>
+16:00~16:05</th>
+      <td width="155" class="student"><p id="navslink">Institute for Virus Research, Kyoto University</p><p>Akihiro Shimba</p></td>
+      <td colspan="2" class="student"><p>Role of glucocorticoids in T cell homeostasis and T cell response</p></td>
+    </tr> 
+ 	<tr id="ts1">
+      <th width="175" class="student"><p align="center"><strong>P31</strong><strong> </strong></p>
+16:05~16:10</th>
+      <td width="155" class="student"><p id="navslink">Department of Life Science, Taiwan Normal University</p><p>Ya-Jen Chiu</p></td>
+      <td colspan="2" class="student"><p>Therapeutic benefits of Chinese herbal medicine <i>Glycyrrhiza inflata</i> on Alzheimer’s disease cell model</p></td>
+    </tr> 
+    
+    <tr>
+      <th width="175"><p align="center">16:10~16:30</p></th>
+      <td colspan="3"><p align="center">Coffee Break</p></td>
+    </tr>
+    <tr id="sessionspace"><td></td></tr>
+    <tr id="ts2">
+      <td colspan="3" id="tstitle"><p align="right"><strong>Session X : Structural Biology</strong></p></td>
+      <td width="197" id="tstitle2"><p align="center" id="navslink">Moderator</p><p align="center">Sung-Yon Kim &<br> Ming Lei</p></td>
+    </tr>
+    <tr id="ts2">
+      <th width="175"><p align="center"><strong>S34</strong><strong> </strong></p>
+16:30~16:45</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Sung-Yon Kim</p></td>
+      <td colspan="2"><p>Towards complete understanding of the anatomy and the function of the neural circuitry underling emotional states</p></td>
+    </tr>
+    <tr id="ts2">
+      <th width="175"><p align="center"><strong>S35</strong><strong> </strong></p>
+16:45~17:00</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Ming Lei</p></td>
+      <td colspan="2"><p>Structural insight into activity regulation of MLL family methytranferases</p></td>
+     </tr>
+    <tr id="ts2">
+      <th width="175"><p align="center"><strong>S36</strong><strong> </strong></p>
+17:00~17:15</th>
+      <td width="156"><p id="navslink">Doctor</p><p>Su-Chang Lin</p></td>
+      <td colspan="2"><p>Structural basis for the Death Domain-fold complex formation</p></td>
+    </tr>
+ 	<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P32</strong><strong> </strong></p>
+17:15~17:20</th>
+      <td width="155" class="student"><p id="navslink">Institute of Medical Science, University of Tokyo</p><p>Shotaro Uchida</p></td>
+      <td colspan="2" class="student"><p>Identification of a novel interacting protein with Nipah virus V protein</p></td>
+    </tr> 
+ 	<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P33</strong><strong> </strong></p>
+17:20~17:25</th>
+      <td width="155" class="student"><p id="navslink">Institute of Molecular Biology and Genetics, Seoul National University</p><p>Injae Hwang</p></td>
+      <td colspan="2" class="student"><p>Antibiotic-mediated alteration of gut microbiota improves glucose metabolism in diet-induced obesity via glucagon-like peptide 1</p></td>
+    </tr> 
+ 	<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P34</strong><strong> </strong></p>
+17:25~17:30</th>
+      <td width="155" class="student"><p id="navslink">Institute of Medical Science, University of Tokyo</p><p>Takeo Mukai</p></td>
+      <td colspan="2" class="student"><p>Neurogenic differentiation potentials in umbilical cord-mesenchymal stromal cells</p></td>
+    </tr> 
+ 	<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P35</strong><strong> </strong></p>
+17:30~17:35</th>
+      <td width="155" class="student"><p id="navslink">Institute for Virus Research, Kyoto University</p><p>Shintaro Yamada</p></td>
+      <td colspan="2" class="student"><p>Analysis of innate immune responses in SFTSV infection</p></td>
+    </tr> 
+ 	<tr id="ts2">
+      <th width="175" class="student"><p align="center"><strong>P36</strong><strong> </strong></p>
+17:35~17:40</th>
+      <td width="155" class="student"><p id="navslink">Department of Life Science, Taiwan Normal University</p><p>Meng-Shih Wu</p></td>
+      <td colspan="2" class="student"><p>Effective inhibition of glioblastoma and its cancer stem cell proliferation in vitro and in vivo—A tale of two Chinese Herbal Medicines</p></td>
+    </tr> 
+    
+    <tr>
+      <th width="175"><p align="center">18:00-21:00</p></th>
+      <td colspan="3"><p align="center">Farewell Party</p></td>
+    </tr>
+  </table>
+
+</section>
+</div>
+
+<div class="container960">
+    <section id="programmegreytext" class="newslink">
+        <a id="floatright" href="#top">Back to top ▲</a>
+    </section>
+</div>
+
+<div class="container960" id="whitebg">
+<img class="shadow" src="images/programmebanner3.jpg" width="960" height="180" alt="Programme Day 3 banner">
+<section id="centerinfo">
+    <table width="800" border="0" cellpadding="0" cellspacing="0" id="outline">
+    <tr id="tf">
+      <td width="175">
+        <p id="tabledate">10/20</p></td>
+      <td width="155"><p align="center">Speaker</p></td>
+      <td width="270"><p align="center">Topic</p></td>
+      <td width="200"><p align="center">Moderator</p></td>
+    </tr>
+    <tr id="sf">
+      <th width="175"><p align="center">09:00~10:00</p></th>
+      <td colspan="3"><p align="center"><strong>Poster presentation competition award</strong><p align="center"> (Chaired by President Yau-Huei Wei, Mackay Medical College)</p></td>
+    </tr>
+    <tr>
+      <th width="175"><p align="center">10:00~10:30</p></th>
+      <td colspan="3"><p align="center">Break and discussion</p></td>
+    </tr>
+    <tr>
+      <th width="175"><p align="center">10:30~12:30</p></th>
+      <td colspan="3"><p align="center">Lunch and travel to Taichung</p></td>
+    </tr>
+    <tr>
+      <th width="175"><p align="center">12:30~15:30</p></th>
+      <td colspan="3"><p align="center">Visit China Medical University</p></td>
+    </tr>
+    <tr>
+      <th width="175"><p align="center">15:30~17:30</p></th>
+      <td colspan="3"><p align="center">Visit Asia University</p></td>
+    </tr>
+    <tr>
+      <th width="175"><p align="center">17:30~19:30</p></th>
+      <td colspan="3"><p align="center">Dinner</p></td>
+    </tr>
+    </table>
+</section>
+</div>
+
+</div>
+
+<footer>
+    <div class="container960"> <a href="index.html"><img src="images/footer.png" onmouseover="this.src='images/footer2.png'" onmouseout="this.src='images/footer.png'"width="591" height="47" alt="Footer" class="hideme"></a>
+        <p class="hideme">Copyright &copy; 2016. Department of Life Science, NTNU</p>
+    </div>
+</footer>
+</body>
+</html>

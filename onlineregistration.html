@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFBMS, EAJS, CSSBMR 2016 - Online Registration</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){   
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},800);                   
+            }            
+        });    
+    });
+    $(".hidetable").toggle();	
+	$("#toggleshow").click(function()
+	{
+		$(".hidetable").fadeToggle(300);
+		  if ($(this).text() == "Show More") 
+		  { 
+			 $(this).text("Show Less"); 
+		  } 
+		  else 
+		  { 
+			 $(this).text("Show More"); 
+		  }; 
+    });
+    
+});
+</script>
+</head>
+
+<body>
+<a name="top"></a>
+<!--<div id="finder">
+	<div class="container960">
+		<p>Home > About</p>
+	</div>
+</div>-->
+<header>
+    <div class="container960">
+
+        <div id="cf4a">
+          <img src="images/banner_EAJS.png" />
+          <img src="images/banner_CSSBMR.png" />
+          <img src="images/banner_SFBMS.png" />
+          <img src="images/banner_EAJS.png" />
+        </div>
+        <div id="date">
+        <img class="date" src="images/date.png">
+        </div>
+    </div>
+
+</header>
+<div class="navbar">
+<ul id="nav">
+  <li id="nav"><a href="index.html">Home</a>
+  	  <!--<a class="chinese" href="#home">首頁</a>-->
+  </li>
+  <li id="nav"><a href="speakers.html">Speakers</a></li>
+  <li id="nav"><a href="programme.html">Programme</a></li>
+  <li id="nav"><a class="active" href="registration.html">Registration</a></li>
+  <li id="nav"><a href="location.html">Location</a></li>
+</ul>
+</div>
+<div class="programmebox">
+    <div class="container960">
+    <section id="programmegreytext">
+        <p id="floatright">Attention: Online Registration Under Construction</p>
+    </section>
+    </div>
+<form> 
+<div class="container960" id="whitebg">
+<section id="centerinfo" class="centerform">
+	<h1>Online Registration</h1>
+    <ul>
+        <li><div class="left"><label for="firstname">First Name</label></div><div class="right"><input type="text" name="firstname" placeholder="大明" required/></div></li>
+        <li><div class="left"><label for="lastname">Last Name</label></div><div class="right"><input type="text" name="lastname" placeholder="王"required/></div></li>
+        <li><div class="left"><label for="title">Title</label></div><div class="right"><input type="radio" name="title" value="Dr." required/>Dr. 
+        <input type="radio" name="title" value="Mr." required/>Mr. 
+         <input type="radio" name="title" value="Ms." required/>Ms.</div></li>
+        <li><div class="left"><label for="affiliation">Affiliation</label></div><div class="right"><input type="text" name="affiliation" maxlength="30"required/></div></li>
+        <li><div class="left"><label for="department">Department</label></div><div class="right"><input type="text" name="department" maxlength="30" required/></div></li>
+        <li><div class="left"><label for="attendance[]">Attendance</label></div><div class="right"><input type="checkbox" name="attendance[]" value="10/18"/>10/18
+        <input type="checkbox" name="attendance[]" value="10/19"/>10/19
+        <input type="checkbox" name="attendance[]" value="10/20"/>10/20</div></li>
+        <li><div class="left"><label for="meal">Meal</label></div><div class="right">	<input type="radio" name="meal" value="Meat" required/>Meat
+        <input type="radio" name="meal" value="Vegetarian" required/>Vegetarian</div></li>
+        <li><div class="left"><label for="country">Country</label></div><div class="right"><input type="text" name="country" required/></div></li>
+        <li><div class="left"><label for="address">Address</label></div><div class="right"><input type="text" name="address" size="35" maxlength="85" required/></div></li>
+        <li><div class="left"><label for="phone">Phone Number</label></div><div class="right"><input type="text" name="phone" placeholder="02-0000-0000"required/></div></li>
+    </ul>   
+</section>
+</div>
+<br>
+
+<div class="container960" id="whitebg">
+<section id="centerinfo" class="centerform">
+	<h1>Login Information</h1>
+    <ul>
+        <li><div class="left"><label for="email">E-Mail Address</label></div><div class="right"><input type="text" name="email" size="35" maxlength="60"required/></div></li>
+        <li><div class="left"><label for="password">Password</label></div><div class="right"><input type="password" name="email" size="35" maxlength="60"required/></div></li>
+        <li><div class="left"><label for="re-pass">Re-Enter Password</label></div><div class="right"><input type="password" name="email" size="35" maxlength="60"required/></div></li>
+    </ul> 
+ <h1><button type="submit" name="submit" class="unable">Register</button></h1>
+</section>
+</div>
+</form>
+</div>
+<footer>
+    <div class="container960"> <a href="index.html"><img src="images/footer.png" onmouseover="this.src='images/footer2.png'" onmouseout="this.src='images/footer.png'"width="591" height="47" alt="Footer" class="hideme"></a>
+        <p class="hideme">Copyright &copy; 2016. Department of Life Science, NTNU</p>
+    </div>
+</footer>
+</body>
+</html>

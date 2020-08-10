@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFBMS, EAJS, CSSBMR 2016 - Registration</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){   
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},800);                   
+            }            
+        });    
+    });
+    $(".hidetable").toggle();	
+	$("#toggleshow").click(function()
+	{
+		$(".hidetable").fadeToggle(300);
+		  if ($(this).text() == "Show More") 
+		  { 
+			 $(this).text("Show Less"); 
+		  } 
+		  else 
+		  { 
+			 $(this).text("Show More"); 
+		  }; 
+    });
+    
+});
+</script>
+</head>
+
+<body>
+<!--<div id="finder">
+	<div class="container960">
+		<p>Home > About</p>
+	</div>
+</div>-->
+<header>
+    <div class="container960">
+
+        <div id="cf4a">
+          <img src="images/banner_EAJS.png" />
+          <img src="images/banner_CSSBMR.png" />
+          <img src="images/banner_SFBMS.png" />
+          <img src="images/banner_EAJS.png" />
+        </div>
+        <div id="date">
+        <img class="date" src="images/date.png">
+        </div>
+    </div>
+
+</header>
+<div class="navbar">
+<ul id="nav">
+  <li id="nav"><a href="index.html">Home</a>
+  	  <!--<a class="chinese" href="#home">首頁</a>-->
+  </li>
+  <li id="nav"><a href="speakers.html">Speakers</a></li>
+  <li id="nav"><a href="programme.html">Programme</a></li>
+  <li id="nav"><a class="active" href="registration.html">Registration</a></li>
+  <li id="nav"><a href="location.html">Location</a></li>
+  <li id="nav"><a href="manual.html">Manual</a></li>
+</ul>
+</div>
+<div class="box">
+<img class="shadow" src="images/registernow.jpg" width="960" height="360" alt="Register now">
+</div>
+
+<div class="container960">
+<section id="centerinfo">
+    <h1>Registration Info</h1>
+     <div id="centerdiv">
+     <p>2016 SFBMS, EAJS, CSSBMR會議邀請貴賓及贊助廠商免註冊。</p>
+     <p class="alittlespace">Invited guests and sponsors are free to attend the meeting and do not need to register.</p><br>
+	 <p>其它参加者請於會場憑學術機關/組織有效証件註冊並繳交新台幣 1000元註冊費* (不退費)。</p>
+     <p class="alittlespace">All other attendees register on site with valid academic ID and registration fee NTD 1,000 dollars*  (Non refundable).</p>
+    </div>
+    <div id="centerdiv" class="hidetable">
+    <br>
+    <p>*註冊費用含入場名牌、議程手冊及二日份午餐。</p>
+    <p class="alittlespace">*Registration fee includes an ID pass, a meeting brochure and two-day lunch tickets.</p>
+    </div>
+
+	<h1><button id="toggleshow">Show More</button></h1>
+</section>
+
+<section id="centerinfo">
+    <h1>Contacts</h1>
+    <div id="centerdiv">
+    <p>如有任何問題，請洽郭芬如 小姐。<br>
+    If you have any problems, please contact Ms. Fen-Ju Kuo.
+    </p>
+    <section class="newslink"><p class="alittlespace"><a href="mailto:fenjukuo@gmail.com?subject=SFBMS Registration Problems">fenjukuo@gmail.com</a></p></section>
+    </div>
+</section>	
+</div>
+<footer>
+    <div class="container960"> <a href="index.html"><img src="images/footer.png" onmouseover="this.src='images/footer2.png'" onmouseout="this.src='images/footer.png'"width="591" height="47" alt="Footer" class="hideme"></a>
+        <p class="hideme">Copyright &copy; 2016. Department of Life Science, NTNU</p>
+    </div>
+</footer>
+</body>
+</html>

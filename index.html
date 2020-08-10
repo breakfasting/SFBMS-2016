@@ -1,0 +1,248 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>SFBMS, EAJS, CSSBMR 2016</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider(
+	{
+	slideshow: true,
+	slideshowSpeed: 7000
+	}
+	);
+  });
+</script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){   
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},800);                   
+            }            
+        });    
+    });
+    $(".hidetable").toggle();	
+	$("button").click(function()
+	{
+		$(".hidetable").fadeToggle(300);
+		  if ($(this).text() == "Show More") 
+		  { 
+			 $(this).text("Show Less"); 
+		  } 
+		  else 
+		  { 
+			 $(this).text("Show More"); 
+		  }; 
+    });
+    
+});
+</script>
+</head>
+
+<body>
+<!--<div id="finder">
+	<div class="container960">
+		<p>Home > About</p>
+	</div>
+</div>-->
+<header>
+    <div class="container960">
+
+        <div id="cf4a">
+          <img src="images/banner_EAJS.png" />
+          <img src="images/banner_CSSBMR.png" />
+          <img src="images/banner_SFBMS.png" />
+          <img src="images/banner_EAJS.png" />
+        </div>
+        <div id="date">
+        <img class="date" src="images/date.png">
+        </div>
+    </div>
+
+</header>
+<div class="navbar">
+<ul id="nav">
+  <li id="nav"><a class="active" href="index.html">Home</a>
+  	  <!--<a class="chinese" href="#home">首頁</a>-->
+  </li>
+  <li id="nav"><a href="speakers.html">Speakers</a></li>
+  <li id="nav"><a href="programme.html">Programme</a></li>
+  <li id="nav"><a href="registration.html">Registration</a></li>
+  <li id="nav"><a href="location.html">Location</a></li>
+  <li id="nav"><a href="manual.html">Manual</a></li>
+</ul>
+</div>
+<div class="dark">
+<section class="container960">
+<div class="flexslider">
+  <ul class="slides">
+    <li><a href="programme.html">
+	  <img src="images/clickprogramme.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">Click to view our Newest Programme</p></a>
+    </li>
+    <li>
+	  <img src="images/photo/banner1.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">2015 SFBMS 與會貴賓與籌備委員</p>
+    </li>
+    <li>
+	  <img src="images/photo/banner2.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">吳研發長與鄭主任</p>
+    </li>
+    <li>
+	  <img src="images/photo/banner3.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">林院士與方教授</p>
+    </li>
+    <li>
+	  <img src="images/photo/banner4.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">2015 SFBMS 會場</p>
+    </li>
+    <li>
+	  <img src="images/photo/banner5.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">2015 SFBMS 會場</p>
+    </li>
+    <li>
+	  <img src="images/photo-stream1.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">歷年會議</p>
+    </li>
+    <li>
+      <img src="images/photo-stream2.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">歷年會議</p>
+    </li>
+    <li>
+      <img src="images/photo-stream3.jpg" width="960" height="360" alt="Photo slide show">
+      <p class="flex-caption">歷年會議</p>
+    </li>
+  </ul>
+</div>
+</section>
+</div>
+<div class="container960">
+<section id="info">
+  <h1>News</h1>
+  <table id="outline" width="830" border="0">
+  	<tr>
+   	 	<th id="lefttable" width="25%">
+      2015.05.29
+    	</th>
+        <td class="newslink"><a href="http://sfbms2015.biol.ntnu.edu.tw/news_1.html">生醫生態演化研討會 海內外學者齊聚</a></td>
+    </tr>
+  </table>
+
+</section>
+<section id="info">
+  <h1>Information</h1>
+<table id="outline" width="830" border="0">
+  <tr>
+    <th id="lefttable" width="25%">會議名稱<br>Name of Conference</th>
+    <td width="630">第23屆東亞生物醫學學術研討會<br>第15屆海峽兩岸生物醫學學術研討會<br>暨第13屆前瞻生物醫學科學新知研討會<br>     
+    The 23rd East Asia Joint Symposium,<br>
+The 15th Cross-Strait Symposium on Biomedical Research<br>& The 13th Symposium of  the Frontiers of Biomedical Sciences
+</td>
+  </tr>
+  <tr>
+    <th id="lefttable">主題<br>Theme</th>
+    <td>生技醫藥<br>      Biomedical Sciences</td>
+  </tr>
+  <tr>
+    <th id="lefttable">日期<br>Dates</th>
+    <td>10/18 – 10/20, 2016</td>
+  </tr>
+  <tr>
+    <th id="lefttable">會場<br>Venue</th>
+    <td>國立臺灣師範大學公館校區，中正堂<br>       Jhong-Jheng Hall, National Taiwan Normal University Gong-Guan Campus<br>台北市文山區汀州路四段88號<br>
+    No. 88, Ting-Chou Rd., Sec. 4, Taipei City, Taiwan
+</td>
+  </tr>
+</table>
+<table class="hidetable" id="outline" width="830" border="0">
+  <tr>
+    <th id="lefttable" width="25%">主席<br>President</th>
+    <td>鄭劍廷 主任 / 林榮耀 院士<br>Chairman Chiang-Ting Chien / Academician Jung-Yaw Lin
+</td>
+  </tr>
+  <tr>
+    <th id="lefttable">籌備<br>Organizer</th>
+    <td>
+    張國恩 Kuo-en Chang<br>
+    李桂楨 Guey-Jen Lee-Chen<br>
+    方　剛 Kang Fang<br>
+    謝秀梅 Hsiu-Mei Hsieh<br>
+    吳忠信 Chung-Hsin Wu<br>
+    蘇銘燦 Ming-Tsan Su<br>
+    林炎壽 Yenshou Lin<br>
+    賴韻如 Yun-Ju Lai<br>
+    林玄原 Hsuan-Yuan Lin
+	</td>
+  </tr>
+</table>
+<h1><button>Show More</button></h1>
+
+</section>
+	
+
+<section id="sponsers">
+	<h1>Organizers</h1>
+  <table border="0" width="600" class="hideme">
+  <tr>
+    <td width="285"><a href="http://www.biol.ntnu.edu.tw/" target="new"><img src="images/sponsors-ntnulifescience.jpg" width="198" height="59" alt="協辦單位-國立台灣師範大學生命科學系"></a></td>
+    <td width="315"><a href="http://www.mc.ntu.edu.tw/department/ibmb/E/foundation/foundation.htm" target="new"><img src="images/sponsors-lin.jpg" width="295" height="59" alt="主辦單位-林榮耀教授學術教育基金會"></a></td>
+  </tr>
+  </table>
+</section>
+
+<section id="sponsers">
+    <h1>Sponsors</h1>
+      <table border="0" width="850" class="hideme" id="sponsertable">
+  <tr>
+    <td width="285"><a href="http://www.most.gov.tw/" target="new"><img src="images/sponsors-most.jpg" width="247" height="54" alt="協辦單位-中華民國科技部"></a></td>
+    <td width="280"><a href="https://www.itri.org.tw/" target="new"><img src="images/sponsors_itri.jpg" width="207" height="48" alt="協辦單位-工業技術研究院"></a></td>
+    <td width="285"><a href="http://bio.tomys.co.jp/" target="new"><img src="images/sponsors/sponsors-tomy.jpg" width="167" height="54" alt="協辦單位-株式会社トミー精工"></a></td>
+  </tr>
+  <tr>
+    <td width="285"><a href="page-unionward.html"><img src="images/sponsors/sponsors-01uni-onward.jpg" width="261" height="60" alt="協辦單位-友和貿易"></a></td>
+    <td width="280"><a href="page-onlyscience.html"><img src="images/sponsors/sponsors-02only.jpg" width="178" height="60" alt="協辦單位-弘屹科技"></a></td>
+    <td width="285"><a href="http://www.dcb.org.tw/" target="new"><img src="images/sponsors/sponsors-03dcb.jpg" width="261" height="40" alt="協辦單位-生技中心"></a></td>
+  </tr>
+  <tr>
+    <td width="285"><a href="page-genetech.html"><img src="images/sponsors/sponsors-04GT.jpg" width="240" height="52" alt="協辦單位-均泰生物科技"></a></td>
+    <td width="280"><a href="page-whp.html"><img src="images/sponsors/sponsors-05whp.jpg" width="76" height="45" alt="協辦單位-德益專利商標事務所"></a></td>
+    <td width="285"><a href="page-cellbio.html"><img src="images/sponsors/sponsors-06cellbio.jpg" width="194" height="49" alt="協辦單位-尚博生物科技"></a></td>
+  </tr>
+  <tr>
+    <td width="285"><a href="page-aipt.html"><img src="images/sponsors/sponsors-07aipt.jpg" width="158" height="41" alt="協辦單位-宏景國際集團"></a></td>
+    <td width="280"><a href="page-ehong.html"><img src="images/sponsors/sponsors-08ehong.jpg" width="185" height="45" alt="協辦單位-益弘儀器"></a></td>
+    <td width="285"><a href="page-hongjing.html"><img src="images/sponsors/sponsors-09hongjing.jpg" width="156" height="44" alt="協辦單位-弘晉有限公司"></a></td>
+  </tr>
+  <tr>
+    <td width="285"><a href="page-taiwanin.html"><img src="images/sponsors/sponsors-10taiwanin.jpg" width="210" height="36" alt="協辦單位-台灣儀器行"></a></td>
+    <td width="280"><a href="page-excel.html"><img src="images/sponsors/sponsors-11excel.jpg" width="198" height="37" alt="協辦單位-昶安生物科技有限公司"></a></td>
+    <td width="285"><a href="page-yuanli.html"><img src="images/sponsors/sponsors-12yuanli.jpg" width="186" height="36" alt="協辦單位-元利儀器股份有限公司"></a></td>
+  </tr>
+  <tr>
+    <td width="285"></td>
+    <td width="280"><a href="page-unimed.html"><img src="images/sponsors/sponsors-13unimed.jpg" width="99" height="39" alt="協辦單位-騰達行"></a></td>
+    <td width="285"></td>
+  </tr>
+  </table>
+
+</section>
+</div>
+<footer>
+    <div class="container960"> <a href="index.html"><img src="images/footer.png" onmouseover="this.src='images/footer2.png'" onmouseout="this.src='images/footer.png'"width="591" height="47" alt="Footer" class="hideme"></a>
+        <p class="hideme">Copyright &copy; 2016. Department of Life Science, NTNU</p>
+    </div>
+</footer>
+</body>
+</html>

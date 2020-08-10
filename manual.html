@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFBMS, EAJS, CSSBMR 2016 - Manual</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){   
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},800);                   
+            }            
+        });    
+    });
+    $(".hidetable").toggle();	
+	$("#toggleshow").click(function()
+	{
+		$(".hidetable").fadeToggle(300);
+		  if ($(this).text() == "Show More") 
+		  { 
+			 $(this).text("Show Less"); 
+		  } 
+		  else 
+		  { 
+			 $(this).text("Show More"); 
+		  }; 
+    });
+    
+});
+</script>
+</head>
+
+<body>
+<!--<div id="finder">
+	<div class="container960">
+		<p>Home > About</p>
+	</div>
+</div>-->
+<header>
+    <div class="container960">
+
+        <div id="cf4a">
+          <img src="images/banner_EAJS.png" />
+          <img src="images/banner_CSSBMR.png" />
+          <img src="images/banner_SFBMS.png" />
+          <img src="images/banner_EAJS.png" />
+        </div>
+        <div id="date">
+        <img class="date" src="images/date.png">
+        </div>
+    </div>
+
+</header>
+<div class="navbar">
+<ul id="nav">
+  <li id="nav"><a href="index.html">Home</a>
+  	  <!--<a class="chinese" href="#home">首頁</a>-->
+  </li>
+  <li id="nav"><a href="speakers.html">Speakers</a></li>
+  <li id="nav"><a href="programme.html">Programme</a></li>
+  <li id="nav"><a href="registration.html">Registration</a></li>
+  <li id="nav"><a href="location.html">Location</a></li>
+  <li id="nav"><a class="active" href="manual.html">Manual</a></li>
+</ul>
+</div>
+<div class="box">
+<img class="shadow" src="images/manualdownload.jpg" width="960" height="360" alt="Manual Download">
+</div>
+
+<div class="container960">
+<section id="centerinfo">
+  <h1>Manual Download</h1>
+	<table width="800" border="0" cellpadding="0">
+	  <tr>
+	    <td><a href="download.php?res=1"><img src="images/pdf-icon.png" width="150" height="150" alt="pdf-logo"></a></td>
+	    <td><p class="registrationinfo">2016年會議手冊 (140頁，中解析度，13.1MB)<br>SFBMS, EAJS, CSSBMR 2016 Manual (140 pages, Medium resolution, 13.1MB)</p></td>
+      </tr>
+    </table>
+    <br>
+    <table width="800" border="0" cellpadding="0">
+	  <tr>
+	    <td><a href="download.php?res=2"><img src="images/pdf-icon.png" width="150" height="150" alt="pdf-logo"></a></td>
+	    <td><p class="registrationinfo">2016年會議手冊 (140頁，高解析度，83.0MB)<br>SFBMS, EAJS, CSSBMR 2016 Manual (140 pages, High resolution, 83.0MB)</p></td>
+      </tr>
+    </table>
+  
+</div>
+<footer>
+    <div class="container960"> <a href="index.html"><img src="images/footer.png" onmouseover="this.src='images/footer2.png'" onmouseout="this.src='images/footer.png'"width="591" height="47" alt="Footer" class="hideme"></a>
+        <p class="hideme">Copyright &copy; 2016. Department of Life Science, NTNU</p>
+    </div>
+</footer>
+</body>
+</html>

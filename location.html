@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFBMS, EAJS, CSSBMR 2016 - Location</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){   
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},800);                   
+            }            
+        });    
+    });
+    $(".hidetable").toggle();	
+	$("button").click(function()
+	{
+		$(".hidetable").fadeToggle(300);
+		  if ($(this).text() == "Show More") 
+		  { 
+			 $(this).text("Show Less"); 
+		  } 
+		  else 
+		  { 
+			 $(this).text("Show More"); 
+		  }; 
+    });
+    
+});
+</script>
+</head>
+
+<body>
+<!--<div id="finder">
+	<div class="container960">
+		<p>Home > About</p>
+	</div>
+</div>-->
+<header>
+    <div class="container960">
+
+        <div id="cf4a">
+          <img src="images/banner_EAJS.png" />
+          <img src="images/banner_CSSBMR.png" />
+          <img src="images/banner_SFBMS.png" />
+          <img src="images/banner_EAJS.png" />
+        </div>
+        <div id="date">
+        <img class="date" src="images/date.png">
+        </div>
+    </div>
+
+</header>
+<div class="navbar">
+<ul id="nav">
+  <li id="nav"><a href="index.html">Home</a>
+  	  <!--<a class="chinese" href="#home">首頁</a>-->
+  </li>
+  <li id="nav"><a href="speakers.html">Speakers</a></li>
+  <li id="nav"><a href="programme.html">Programme</a></li>
+  <li id="nav"><a href="registration.html">Registration</a></li>
+  <li id="nav"><a class="active" href="location.html">Location</a></li>
+  <li id="nav"><a href="manual.html">Manual</a></li>
+</ul>
+</div>
+<div class="box">
+<p class="alittlespace"></p>
+<iframe class="shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7858359258153!2d121.53443781082245!3d25.007392196261254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa1e27ab738b%3A0x2e5be38c37583475!2z5ZyL56uL6Ie654Gj5bir56-E5aSn5a245YWs6aSo5qCh5Y2A!5e0!3m2!1szh-TW!2stw!4v1423488963517" width="800" height="600" frameborder="0" style="border:0"></iframe>
+
+    <section id="centerinfo">
+    <h2>國立臺灣師範大學公館校區，中正堂</h2>
+        <p>National Taiwan Normal University Gong-Guan Campus, Jhong-Jheng Hall<br>
+        台北市文山區汀州路四段88號<br>
+        No. 88, Ting-chou Rd., Sec. 4, Taipei City, Taiwan</p>
+    </section>
+    <section class="hideme" align="center">
+        <img class="rounded" src="images/location-frontgate.jpg" width="400" height="260" alt="Location Front Gate"/>
+        <img class="rounded" src="images/location-floor.jpg" width="400" height="260" alt="Forum Floor"/>
+    </section> 
+</div>
+
+<div class="container960">
+<section id="centerinfo">
+	<h1>Bus</h1>
+    <div id="centerdiv">
+    <p>搭乘0南、綠13、30、74、109、236、251、252、253、278、284、290、530、606、623<br>
+	、642、644、 647、648、650、660 至「師大分部站」。</p>
+	<p class="alittlespace">Take route 0 (South)、(Green) 13、30、74、109、236、251、252、253、278、284、290、530、	606、623、642、644、 647、648、650、660 -「N.T.N.U Branch」</p>
+    </div>
+</section>
+<section id="centerinfo" >
+    <h1>MRT</h1>
+    <div id="centerdiv">
+    <p>公館站：淡水信義線『公館站』1號出口往汀洲路四段步行10分鐘即可到達。</p>
+    <p class="alittlespace">Gong-Guan Station: Tamsui/Xinyi Line Gong-Guan Station Exit 1. Walk alongside <br>
+     Sec. 4, Ting-Chou Road for 10 minutes.</p>
+     </div>
+</section>
+<section id="centerinfo">
+    <h1>Driving</h1>
+     <div id="centerdiv">
+     <p>一號國道：建國北路出口→直行建國高架橋至和平東路出口右轉→約一分鐘左轉新生南路<br>
+    →直行新生南路至台大校門口左轉羅斯福路四段→羅斯福路四段行經基隆路後，約100公尺右轉汀州路四段即可看到台灣師大理學院。</p>
+    <p class="alittlespace">National Freeway No.1: Yuanshan Interchange (Jianguo N. Road export)<br>
+    ->Jianguo Elevated Road (Heping East Road export)->turn left to Siyuan S. Road<br>
+    ->Until N.T.U. and turn left to Sec. 4, Roosevelt Road->Sec. 4, Roosevelt Road until across Keelung Road and turn right to Sec. 4, Ting-Chou Road->N.T.N.U College of Science</p>
+    </div>
+    <div id="centerdiv" class="hidetable">
+    <p class="alittlespace">三號國道：新店出口(新店之第二出口)→中興路(約3-5分鐘)→左轉民權路<br>
+          →右轉北新路→直行北新路即可接上羅斯福路六段→直行至羅斯福路五段即可看到台灣師大理學院(在左側)。</p>
+        <p class="alittlespace">National Freeway No.3: Xindian Interchange->Zhougxing Road (3-5 minutes)<br>
+        ->Turn left to Minquan Road->Turn right to Beixin Road-> Sec. 6, Roosevelt Road-><br>
+        Sec. 5, Roosevelt Road left side (N.T.N.U College of Science)</p>
+    </div>
+
+	<h1><button>Show More</button></h1>
+
+</section>
+
+	
+</div>
+<footer>
+    <div class="container960"> <a href="index.html"><img src="images/footer.png" onmouseover="this.src='images/footer2.png'" onmouseout="this.src='images/footer.png'"width="591" height="47" alt="Footer" class="hideme"></a>
+        <p class="hideme">Copyright &copy; 2016. Department of Life Science, NTNU</p>
+    </div>
+</footer>
+</body>
+</html>
